@@ -11,7 +11,7 @@
  * @since 1.0.0
  */
 ?><!doctype html>
-<html <?php language_attributes(); ?> class="text-gray-800 antialiased leading-tight">
+<html <?php language_attributes(); ?> class="h-full text-gray-800 antialiased leading-tight">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +22,7 @@
 <?php wp_body_open(); ?>
 
   <header>
-    <div class="container">
+    <div class="mx-auto px-6 max-w-5xl">
 
     <div class="site-branding-container">
       <?php get_template_part( 'template-parts/header/site', 'branding' ); ?>

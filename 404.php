@@ -12,22 +12,20 @@
 get_header();
 ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+  <main id="main" class="mx-auto my-10 px-6 max-w-5xl">
 
-			<div class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'twentynineteen' ); ?></h1>
-				</header><!-- .page-header -->
+    <div class="mx-auto max-w-3xl error-404 not-found">
+      <header class="page-header">
+        <h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'twentynineteen' ); ?></h1>
+      </header><!-- .page-header -->
 
-				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentynineteen' ); ?></p>
-					<?php get_search_form(); ?>
-				</div><!-- .page-content -->
-			</div><!-- .error-404 -->
+      <div class="page-content">
+        <p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentynineteen' ); ?></p>
+        <?php get_search_form(); ?>
+      </div><!-- .page-content -->
+    </div><!-- .error-404 -->
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+  </main><!-- #main -->
 
 <?php
 get_footer();

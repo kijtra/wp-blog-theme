@@ -23044,11 +23044,22 @@ pre[class*=language-] {
   cursor: help;
 }
 
-.wp-block-code[lang] {
+pre.wp-block-code {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+pre.wp-block-code.line-numbers {
+  padding-left: calc(3em + 1.5rem);
+}
+
+pre.wp-block-code[lang] {
   position: relative;
 }
 
-.wp-block-code[lang]:before {
+pre.wp-block-code[lang]:before {
   content: attr(lang);
   position: absolute;
   top: 0.2rem;
@@ -23058,7 +23069,11 @@ pre[class*=language-] {
   text-transform: uppercase;
 }
 
-.wp-block-code .line-numbers-rows {
+pre.wp-block-code > code {
+  display: block;
+}
+
+pre.wp-block-code .line-numbers-rows {
   border-right-color: rgba(102, 102, 102, 0.5);
   opacity: 0.6;
 }
@@ -23072,6 +23087,19 @@ a {
   code[class*=language-],
 pre[class*=language-] {
     text-shadow: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  pre.wp-block-code {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  pre.wp-block-code.line-numbers {
+    padding-left: 3.8em;
   }
 }
 
