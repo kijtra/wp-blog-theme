@@ -1,0 +1,28 @@
+// @import "~prismjs/themes/prism";
+@import "~prism-theme-one-dark/prism-onedark";
+@import "~prismjs/plugins/line-highlight/prism-line-highlight.css";
+@import "~prismjs/plugins/line-numbers/prism-line-numbers.css";
+
+.wp-block-code {
+  &[lang] {
+    position:relative;
+
+    &:before {
+      content:attr(lang);
+      position:absolute;
+      top:.2rem;
+      right:.5rem;
+      opacity:.5;
+      font-size:.8em;
+      text-transform: uppercase;
+    }
+  }
+
+  // .line-numbers {
+  .line-numbers-rows {
+    border-right-color:rgba(#666, .5);
+    opacity:.6;
+  }
+}
+
+

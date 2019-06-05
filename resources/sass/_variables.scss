@@ -1,0 +1,17 @@
+
+// フォントファミリー
+$font-family-sans-serif: "Noto Sans JP", -apple-system, BlinkMacSystemFont,
+  "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN,
+  Arial, "メイリオ", Meiryo, sans-serif;
+
+// ベースフォント設定
+$font-family-base: $font-family-sans-serif;
+
+// RFS有効化
+$enable-responsive-font-sizes: true;
+
+// MaterialDesignIconsのファイルパス
+$mdi-font-path: "https://cdn.materialdesignicons.com/3.6.95/fonts";
+
+// 見出しの太字化
+// $headings-font-weight: $font-weight-bold;

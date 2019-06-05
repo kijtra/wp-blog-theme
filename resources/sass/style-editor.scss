@@ -1,0 +1,20 @@
+/*!
+Kijtra's Blog Editor Styles
+*/
+
+@import "./bootstrap";
+
+.editor-block-list__layout {
+  .editor-block-list__block {
+    &, & p {
+      font-family:$font-family-base;
+    }
+  }
+}
+
+.editor-post-title__block {
+  .editor-post-title__input {
+    font-family:$font-family-base !important;
+  }
+}
+

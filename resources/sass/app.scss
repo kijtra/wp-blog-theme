@@ -1,0 +1,31 @@
+/*!
+Theme Name: Kijtra's Blog
+Theme URI: https://github.com/kijtra/wp-blog-theme
+Author: kijtra
+Author URI: https://kijtra.com
+Description: Hello World.
+Requires at least: WordPress 5.2.1
+Version: 0.0.1
+Text Domain: kijtra-blog
+*/
+
+@import "./bootstrap";
+@import "./prism";
+
+
+// html {
+//   @apply font-sans;
+// }
+
+// h1 {
+//   @apply text-2xl;
+// }
+// h2 {
+//   @apply text-xl;
+// }
+// h3 {
+//   @apply text-lg;
+// }
+a {
+  @apply text-blue-600 underline;
+}
