@@ -4,7 +4,8 @@
       "prismjs",
       {
         "languages": ["javascript", "css", "markup", "php"],
-        "plugins": ["line-numbers", "line-highlight", "normalize-whitespace", "remove-initial-line-feed"]
+        "plugins": ["line-numbers", "line-highlight", "normalize-whitespace", "remove-initial-line-feed"],
+        "css": false
       }
     ]
   ]
