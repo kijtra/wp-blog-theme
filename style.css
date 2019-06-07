@@ -725,7 +725,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /**
@@ -761,20 +761,19 @@ video {
   height: auto;
 }
 
-html{
-  font-family: "Noto Sans JP", -apple-system, sans-serif;
-}
-
 h1{
-  font-size: 1.5rem;
+  font-size: 2.25rem;
+  font-weight: 700;
 }
 
 h2{
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 h3{
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .container{
@@ -3827,14 +3826,6 @@ h3{
 
 .font-sans{
   font-family: "Noto Sans JP", -apple-system, sans-serif;
-}
-
-.font-serif{
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.font-mono{
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .font-hairline{
@@ -23047,12 +23038,6 @@ pre[class*=language-] {
 pre.wp-block-code {
   margin-left: -1.5rem;
   margin-right: -1.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-pre.wp-block-code.line-numbers {
-  padding-left: calc(3em + 1.5rem);
 }
 
 pre.wp-block-code[lang] {
@@ -23067,6 +23052,11 @@ pre.wp-block-code[lang]:before {
   opacity: 0.5;
   font-size: 0.8em;
   text-transform: uppercase;
+}
+
+pre.wp-block-code[lang=javascript]:before {
+  content: "JavaScript";
+  text-transform: none;
 }
 
 pre.wp-block-code > code {
@@ -23090,16 +23080,10 @@ pre[class*=language-] {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   pre.wp-block-code {
     margin-left: 0;
     margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  pre.wp-block-code.line-numbers {
-    padding-left: 3.8em;
   }
 }
 
@@ -26126,14 +26110,6 @@ pre[class*=language-] {
 
   .sm\:font-sans{
     font-family: "Noto Sans JP", -apple-system, sans-serif;
-  }
-
-  .sm\:font-serif{
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .sm\:font-mono{
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .sm\:font-hairline{
@@ -33170,14 +33146,6 @@ pre[class*=language-] {
     font-family: "Noto Sans JP", -apple-system, sans-serif;
   }
 
-  .md\:font-serif{
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .md\:font-mono{
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
   .md\:font-hairline{
     font-weight: 100;
   }
@@ -40212,14 +40180,6 @@ pre[class*=language-] {
     font-family: "Noto Sans JP", -apple-system, sans-serif;
   }
 
-  .lg\:font-serif{
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .lg\:font-mono{
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
   .lg\:font-hairline{
     font-weight: 100;
   }
@@ -47252,14 +47212,6 @@ pre[class*=language-] {
 
   .xl\:font-sans{
     font-family: "Noto Sans JP", -apple-system, sans-serif;
-  }
-
-  .xl\:font-serif{
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .xl\:font-mono{
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .xl\:font-hairline{

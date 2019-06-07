@@ -11,7 +11,7 @@
  * @since 1.0.0
  */
 ?><!doctype html>
-<html <?php language_attributes(); ?> class="h-full text-gray-800 antialiased leading-tight">
+<html <?php language_attributes(); ?> class="h-full font-sans text-gray-900 antialiased leading-relaxed">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1">

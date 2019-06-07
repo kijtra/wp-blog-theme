@@ -631,7 +631,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /**
@@ -667,20 +667,19 @@ video {
   height: auto;
 }
 
-html{
-  font-family: "Noto Sans JP", -apple-system, sans-serif;
-}
-
 h1{
-  font-size: 1.5rem;
+  font-size: 2.25rem;
+  font-weight: 700;
 }
 
 h2{
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 h3{
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .container{
@@ -3733,14 +3732,6 @@ h3{
 
 .font-sans{
   font-family: "Noto Sans JP", -apple-system, sans-serif;
-}
-
-.font-serif{
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.font-mono{
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .font-hairline{
@@ -25855,14 +25846,6 @@ h3{
     font-family: "Noto Sans JP", -apple-system, sans-serif;
   }
 
-  .sm\:font-serif{
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .sm\:font-mono{
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
   .sm\:font-hairline{
     font-weight: 100;
   }
@@ -32895,14 +32878,6 @@ h3{
 
   .md\:font-sans{
     font-family: "Noto Sans JP", -apple-system, sans-serif;
-  }
-
-  .md\:font-serif{
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .md\:font-mono{
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .md\:font-hairline{
@@ -39939,14 +39914,6 @@ h3{
     font-family: "Noto Sans JP", -apple-system, sans-serif;
   }
 
-  .lg\:font-serif{
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .lg\:font-mono{
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
   .lg\:font-hairline{
     font-weight: 100;
   }
@@ -46979,14 +46946,6 @@ h3{
 
   .xl\:font-sans{
     font-family: "Noto Sans JP", -apple-system, sans-serif;
-  }
-
-  .xl\:font-serif{
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .xl\:font-mono{
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .xl\:font-hairline{

@@ -5,11 +5,6 @@
 
 pre.wp-block-code {
   @apply -mx-6;
-  @apply px-6;
-
-  &.line-numbers {
-    padding-left:calc(3em + theme('spacing.6'));
-  }
 
   &[lang] {
     position:relative;
@@ -25,24 +20,23 @@ pre.wp-block-code {
     }
   }
 
+  &[lang="javascript"]:before {
+    content:'JavaScript';
+    text-transform: none;
+  }
+
   >code {
     display:block;
 
   }
 
-  // .line-numbers {
   .line-numbers-rows {
     border-right-color:rgba(#666, .5);
     opacity:.6;
   }
 
-  @media (min-width: theme('screens.lg')) {
+  @media (min-width: theme('screens.md')) {
     @apply mx-0;
-    @apply px-0;
-
-    &.line-numbers {
-      padding-left:3.8em;
-    }
   }
 }
 

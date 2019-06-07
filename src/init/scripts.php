@@ -51,13 +51,25 @@ add_action('admin_enqueue_scripts', function () {
 });
 
 add_filter('the_content', function($content) {
-  preg_match_all('#(<pre[^>]*?>)[^<]*?<code[^>]*?lang=[\'"]([^\'"]+)[\'"]#isu', $content, $matches);
+  /*
+  preg_match_all('#(<pre[^>]*?class="([^"]+)"[^>]*?>)[^<]*?<code#isu', $content, $matches);
   if (!empty($matches[1])) {
     foreach ($matches[1] as $key => $pre) {
-      $lang = $matches[2][$key];
-      $rep = str_replace('>', ' lang="'.$lang.'">', $pre);
+      $class = $matches[2][$key];
+      $rep = str_replace($class, $class.' sm:-mx-6 md:mx-0', $pre);
       $content = str_replace($pre, $rep, $content);
     }
   }
+  */
+
+  preg_match_all('#(<pre[^>]*?>[^<]*?<code[^>]*?lang=[\'"]([^\'"]+)[\'"][^>]*?>)#isu', $content, $matches);
+  if (!empty($matches[1])) {
+    foreach ($matches[1] as $key => $pre) {
+      $lang = $matches[2][$key];
+      $rep = str_replace('<pre ', '<pre lang="'.$lang.'" ', $pre);
+      $content = str_replace($pre, $rep, $content);
+    }
+  }
+
   return $content;
-});
+}, 100);
