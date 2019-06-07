@@ -23038,6 +23038,8 @@ pre[class*=language-] {
 pre.wp-block-code {
   margin-left: -1.5rem;
   margin-right: -1.5rem;
+  padding: 0;
+  overflow: hidden;
 }
 
 pre.wp-block-code[lang] {
@@ -23060,10 +23062,23 @@ pre.wp-block-code[lang=javascript]:before {
 }
 
 pre.wp-block-code > code {
+  padding: 1.5rem;
   display: block;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-pre.wp-block-code .line-numbers-rows {
+pre.wp-block-code.line-numbers {
+  padding-left: 0;
+}
+
+pre.wp-block-code.line-numbers > code {
+  padding-left: 3.8em;
+}
+
+pre.wp-block-code.line-numbers .line-numbers-rows {
+  top: 1.5rem;
+  left: 0;
   border-right-color: rgba(102, 102, 102, 0.5);
   opacity: 0.6;
 }

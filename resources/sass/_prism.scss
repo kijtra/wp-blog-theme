@@ -5,6 +5,8 @@
 
 pre.wp-block-code {
   @apply -mx-6;
+  padding:0;
+  overflow:hidden;
 
   &[lang] {
     position:relative;
@@ -26,13 +28,25 @@ pre.wp-block-code {
   }
 
   >code {
+    @apply p-6;
     display:block;
-
+    overflow:auto;
+    -webkit-overflow-scrolling: touch;
   }
 
-  .line-numbers-rows {
-    border-right-color:rgba(#666, .5);
-    opacity:.6;
+  &.line-numbers {
+    padding-left:0;
+
+    >code {
+      padding-left:3.8em;
+    }
+
+    .line-numbers-rows {
+      top:theme('spacing.6');
+      left:0;
+      border-right-color:rgba(#666, .5);
+      opacity:.6;
+    }
   }
 
   @media (min-width: theme('screens.md')) {
